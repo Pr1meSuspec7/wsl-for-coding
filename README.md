@@ -1,7 +1,8 @@
 # Configuring WSL for coding
 
 ## Install WSL
-1. **Open PowerShell as administrator and run:**
+
+### 1. Open PowerShell as administrator and run:
 
 ```
 wsl --install
@@ -18,9 +19,9 @@ The requested operation is successful.
 Changes will not be effective until the system is rebooted.
 ```
 
-2. **Reboot**
+### 2. Reboot
 
-3. **Check status**
+### 3. Check status
 ```
 wsl --status
 ```
@@ -40,7 +41,7 @@ Run this command, reboot then check again (step 3):
 dism.exe /online /enable-feature /featurename:VirtualMachinePlatform /all /norestart
 ```
 
-4. **Install ubuntu**
+### 4. Install ubuntu
 
 Open a terminal, run "ubuntu" command and follow instruction to create user:
 
@@ -72,24 +73,24 @@ This message is shown once a day. To disable it please create the
 mark@NTT-G09LQQ2:~$
 ```
 
-5. **Update ubuntu**
+### 5. Update ubuntu
 
 Run:
 ```
 sudo apt update ; sudo apt upgrade -y
 ```
 
-6. **Install useful tools**
+### 6. Install useful tools
 
 ```
 sudo apt install -y nmap nano vim tcpdump net-tools ipcalc neofetch netcat traceroute
 ```
 
-7. **Install VScode**
+### 7. Install VScode
 
 https://code.visualstudio.com/
 
-8. **Install WSL extension**
+### 8. Install WSL extension
 
 Open VScode and after few seconds you should see this notification in the bottom right corner:
 ```
@@ -98,14 +99,15 @@ Do you want to install the recommended 'WSL' extension from Microsoft for it?
 ```
 You can click "install" or move on extension and search for "WLS"
 
-9. **Use ubuntu in VScode**
+### 9. Use ubuntu in VScode
 
 Click the "Remote Window Icon" in the bottom left corner and select "Connect to WSL".  
 Now you are in the ubuntu machine.
 
+
 ## Network setup
 
-1. **Change subnet for WSL machines**
+### 1. Change subnet for WSL machines
 
 WSL's default subnet is too large and may overlap with some client networks.  
 To reduce this network, two registry keys must be changed.
@@ -124,12 +126,12 @@ I recommend using:
 
 Then reboot.
 
-2. **Run ubuntu again**
+### 2. Run ubuntu again
 
 The next time you run ubuntu you will see an error, don't worry, this is because you have changed the default subnet.  
 This error will no longer appear on future runs.
 
-3. **Check new ip address**
+### 3. Check new ip address
 
 Run ubuntu and digit "ifconfig" or "ip address" command, you should see the new ip address in the new subnet.
 
