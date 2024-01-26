@@ -29,7 +29,7 @@ wsl --status
 Versione predefinita: 2
 ```
 
-NOTE: If you get an error like this:
+:warning:WARNING: If you get an error like this:
 ```
 WslRegisterDistribution failed with error: 0x8004032d
 Error: 0x8004032d (null)
