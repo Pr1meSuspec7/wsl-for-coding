@@ -2,7 +2,8 @@
 
 ## Requirements
 
-The **Virtualization Technology (VT-x)** must be enabled in bios configuration.
+- Windows 11 machine
+- The **Virtualization Technology (VT-x)** must be enabled in bios configuration.
 
 ## Install WSL
 
