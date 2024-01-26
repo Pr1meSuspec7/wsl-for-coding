@@ -1,5 +1,9 @@
 # Configuring WSL for coding
 
+## Requirements
+
+The **Virtualization Technology (VT-x)** must be enabled in bios configuration.
+
 ## Install WSL
 
 ### 1. Open PowerShell as administrator and run:
