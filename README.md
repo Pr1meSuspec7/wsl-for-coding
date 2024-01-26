@@ -98,17 +98,17 @@ You can click "install" or move on extension and search for "WLS"
 
 9. Use ubuntu in VScode
 
-Click the "Remote Window Icon" in the bottom left corner and select "Connect to WSL".
+Click the "Remote Window Icon" in the bottom left corner and select "Connect to WSL".\
 Now you are in the ubuntu machine.
 
 ## Network setup
 
 1. Change subnet for WSL machines
 
-WSL's default subnet is too large and may overlap with some client networks.
+WSL's default subnet is too large and may overlap with some client networks.\
 To reduce this network, two registry keys must be changed.
 
-Press Win-key, digit "regedit" and press enter.
+Press Win-key, digit "regedit" and press enter.\
 Go to this path and change these keys:
 ```
 Computer\HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Lxss\
@@ -124,7 +124,7 @@ Then reboot.
 
 2. Run ubuntu again
 
-The next time you run ubuntu you will see an error, don't worry, this is because you have changed the default subnet. 
+The next time you run ubuntu you will see an error, don't worry, this is because you have changed the default subnet.\
 This error will no longer appear on future runs.
 
 3. Check new ip address
