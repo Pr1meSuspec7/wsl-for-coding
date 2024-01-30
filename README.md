@@ -140,3 +140,7 @@ This error will no longer appear on future runs.
 
 Run ubuntu and digit "ifconfig" or "ip address" command, you should see the new ip address in the new subnet.
 
+## Appendix
+
+[How to install WSL](https://learn.microsoft.com/en-us/windows/wsl/install)  
+[Best practices for setting up a WSL](https://learn.microsoft.com/en-us/windows/wsl/setup/environment)  
